@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css -cascading style sheet</title>
+    <style>
+       h1 {
+             color: red;
+        }
+        #adda {
+            color:yellowgreen;
+
+        }
+        #time {
+            color:red;
+        }
+        .smile h1{
+            background-color: turquoise;
+        }
+        body{
+            counter-reset: section; 
+        }
+        div p::before{
+
+          
+          counter-increment: section;
+          content: "month" counter(section) ":";
+
+        }
+    </style>
+</head>
+<body>
+    <h1>adding makup.yah!</h1>
+    <p>coding is easy</p>
+    <p>but hard to remember </p>
+    <p id="adda">regularly revision is important</p>
+    <p id="time">you have to revise once a week</p>
+    <p class="smile">smiles yourself</p>\
+    <p class="smile">not laugh<h1>good better best</h1></p>
+    <div>
+        <p>
+            january
+        </p>
+        <p>February</p>
+        <p>March</p>
+        <p>April</p>
+        <p>May</p>
+        <p>June</p>
+        <p>Julai</p>
+        <p>August</p>
+        <p>September
+        </p>
+        <p>octomber</p>
+        <p>November</p>
+        <p>December</p>
+    </div>
+</body>
+</html>
